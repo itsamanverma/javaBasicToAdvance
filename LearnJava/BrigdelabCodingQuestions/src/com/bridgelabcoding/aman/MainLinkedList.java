@@ -1,0 +1,63 @@
+package com.bridgelabcoding.aman;
+
+public class MainLinkedList 
+{
+  public static void main(String[] args) 
+  {
+	SinglyLinkedList sl= new SinglyLinkedList();
+	sl.add("Raju");
+	sl.add("Manju");
+	sl.add("Kiran");
+	sl.add("Ramu");
+	System.out.println(sl);
+	System.out.println("<---------------------------------->");
+    sl.addFirst("Teju");	
+    System.out.println(sl);
+    //sl.addLast("Sona");
+    //System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    sl.add("Chetan",2);
+    System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    sl.add("Raghu",4);
+    System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    System.out.println(sl.deleteFirst());
+    System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    System.out.println(sl.deleteLast());
+    System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    System.out.println(sl.deleteSpecificIndex(2));
+    System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    System.out.println(sl.searchElementDelete("Chetan"));
+    System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    sl.add("Sona");
+    sl.add("Soniya");
+    sl.add("Sonu");
+    sl.add("Kamo");
+    System.out.println(sl);
+    System.out.println("<---------------------------------->");
+    sl.display();
+    System.out.println("<---------------------------------->");
+    sl.displayRev();
+    System.out.println("<----------------------------------->");
+    sl.reverse();
+    System.out.println(sl);
+    System.out.println("<------------------------------------->");
+    System.out.println(sl.printMiddle());
+    System.out.println("<------------------------------------->");
+    System.out.println(sl);
+    System.out.println("<------------------------------------->");
+    System.out.println(sl.deleteMiddle());
+    System.out.println("<------------------------------------->");
+    System.out.println(sl);
+    System.out.println("<------------------------------------->");
+    System.out.println(sl.searchElement("Sonu"));
+    System.out.println("<------------------------------------->");
+    sl.rotate(3);
+    System.out.println(sl);
+  }
+}
